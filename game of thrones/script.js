@@ -164,7 +164,7 @@ const characters = [
     role: "King in the North",
 
     image:
-    "snow.jpg",
+    "https://en.wikipedia.org/wiki/Jon_Snow_%28character%29",
 
     description:
     "Jon Snow grows from a misunderstood young man into one of the central leaders of the war against the Army of the Dead."
