@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Westeros — The Complete Chronicles</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= LOADER ================= -->
+
+<div id="loader">
+
+    <div class="loader-symbol">⚔</div>
+
+    <h2>WESTEROS</h2>
+
+    <p>THE CHRONICLES ARE AWAKENING...</p>
+
+    <div class="loader-line">
+        <span></span>
+    </div>
+
+</div>
+
+
+<!-- ================= EFFECTS ================= -->
+
+<div id="snow"></div>
+<div id="embers"></div>
+<div id="fog"></div>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        WESTEROS
+    </div>
+
+    <nav>
+
+        <a href="#home">Home</a>
+        <a href="#houses">Houses</a>
+        <a href="#characters">Characters</a>
+        <a href="#seasons">Seasons</a>
+        <a href="#battles">Battles</a>
+
+    </nav>
+
+    <button id="soundBtn">
+        🔊
+    </button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+    <div class="moon"></div>
+
+    <div class="castle">
+        🏰
+    </div>
+
+    <div class="hero-content">
+
+        <p class="eyebrow">
+            THE SEVEN KINGDOMS
+        </p>
+
+        <h1>
+            GAME OF
+            <span>THRONES</span>
+        </h1>
+
+        <p class="hero-description">
+
+            Kings will rise.
+            Kingdoms will fall.
+            Blood will be spilled.
+
+            <br>
+
+            Explore the complete chronicles
+            of Westeros.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#houses" class="primary-btn">
+                ENTER WESTEROS
+            </a>
+
+            <a href="#seasons" class="secondary-btn">
+                EXPLORE SEASONS
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="scroll-indicator">
+        <span></span>
+        SCROLL TO EXPLORE
+    </div>
+
+</section>
+
+
+<!-- ================= HOUSES ================= -->
+
+<section id="houses" class="section">
+
+    <div class="section-heading">
+
+        <p>THE GREAT FAMILIES</p>
+
+        <h2>
+            HOUSES OF WESTEROS
+        </h2>
+
+        <div class="gold-line"></div>
+
+    </div>
+
+
+    <div id="houseContainer" class="house-grid"></div>
+
+</section>
+
+
+<!-- ================= CHARACTERS ================= -->
+
+<section id="characters" class="section characters-section">
+
+    <div class="section-heading">
+
+        <p>LEGENDS OF THE REALM</p>
+
+        <h2>
+            CHARACTERS
+        </h2>
+
+        <div class="gold-line"></div>
+
+    </div>
+
+
+    <div class="character-filter">
+
+        <button class="filter active" data-house="all">
+            ALL
+        </button>
+
+        <button class="filter" data-house="Stark">
+            STARK
+        </button>
+
+        <button class="filter" data-house="Targaryen">
+            TARGARYEN
+        </button>
+
+        <button class="filter" data-house="Lannister">
+            LANNISTER
+        </button>
+
+        <button class="filter" data-house="Baratheon">
+            BARATHEON
+        </button>
+
+        <button class="filter" data-house="Greyjoy">
+            GREYJOY
+        </button>
+
+        <button class="filter" data-house="Tyrell">
+            TYRELL
+        </button>
+
+        <button class="filter" data-house="Martell">
+            MARTELL
+        </button>
+
+    </div>
+
+
+    <div id="characterContainer"
+         class="character-grid">
+
+    </div>
+
+</section>
+
+
+<!-- ================= SEASONS ================= -->
+
+<section id="seasons" class="season-section">
+
+    <div class="section-heading">
+
+        <p>THE COMPLETE STORY</p>
+
+        <h2>
+            SEASONS
+        </h2>
+
+        <div class="gold-line"></div>
+
+    </div>
+
+
+    <div class="season-selector">
+
+        <button class="season-btn active"
+                data-season="1">
+            I
+        </button>
+
+        <button class="season-btn"
+                data-season="2">
+            II
+        </button>
+
+        <button class="season-btn"
+                data-season="3">
+            III
+        </button>
+
+        <button class="season-btn"
+                data-season="4">
+            IV
+        </button>
+
+        <button class="season-btn"
+                data-season="5">
+            V
+        </button>
+
+        <button class="season-btn"
+                data-season="6">
+            VI
+        </button>
+
+        <button class="season-btn"
+                data-season="7">
+            VII
+        </button>
+
+        <button class="season-btn"
+                data-season="8">
+            VIII
+        </button>
+
+    </div>
+
+
+    <div id="seasonContent"
+         class="season-content">
+
+    </div>
+
+</section>
+
+
+<!-- ================= BATTLE ================= -->
+
+<section id="battles" class="battle-hero">
+
+    <div class="battle-overlay"></div>
+
+    <div class="battle-title">
+
+        <p>THE GREAT WARS</p>
+
+        <h2>
+            BATTLES
+        </h2>
+
+        <p>
+            Steel. Blood. Fire.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div id="battleContainer"
+         class="battle-grid">
+
+    </div>
+
+</section>
+
+
+<!-- ================= DRAGON ================= -->
+
+<section class="dragon-section">
+
+    <div class="dragon-fire"></div>
+
+    <div class="dragon">
+
+        🐉
+
+    </div>
+
+    <h2>
+        DRACARYS
+    </h2>
+
+    <p>
+        Fire will reign again.
+    </p>
+
+    <button id="dragonBtn">
+        SUMMON THE DRAGON
+    </button>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h2>
+        WESTEROS
+    </h2>
+
+    <p>
+        The chronicles of kings,
+        queens and warriors.
+    </p>
+
+    <div class="footer-line"></div>
+
+    <small>
+        Fan-made cinematic encyclopedia
+    </small>
+
+</footer>
+
+
+<!-- ================= MODAL ================= -->
+
+<div id="modal" class="modal">
+
+    <div class="modal-box">
+
+        <button id="closeModal">
+            ×
+        </button>
+
+        <div id="modalContent"></div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
