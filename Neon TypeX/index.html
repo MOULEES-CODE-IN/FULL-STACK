@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TYPEX - Neon Typing Arena</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="glow glow1"></div>
+        <div class="glow glow2"></div>
+        <div class="glow glow3"></div>
+    </div>
+
+    <main class="game-container">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div class="logo">
+                <span>⚡</span> TYPEX
+            </div>
+
+            <div class="best-score">
+                🏆 BEST:
+                <span id="bestScore">0</span>
+            </div>
+
+        </header>
+
+
+        <!-- Game Title -->
+        <section class="hero">
+
+            <h1>TEST YOUR <span>TYPING SPEED</span></h1>
+
+            <p>Type fast. Stay accurate. Beat your record.</p>
+
+        </section>
+
+
+        <!-- Text Area -->
+        <section class="text-box">
+
+            <div id="textDisplay">
+                The quick brown fox jumps over the lazy dog and runs away.
+            </div>
+
+        </section>
+
+
+        <!-- Timer -->
+        <section class="timer-section">
+
+            <div id="timer">00 : 30</div>
+
+            <p>TIME REMAINING</p>
+
+        </section>
+
+
+        <!-- Input -->
+        <section class="input-section">
+
+            <textarea
+                id="typingInput"
+                placeholder="Start typing here..."
+                spellcheck="false"
+                disabled>
+            </textarea>
+
+        </section>
+
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <span id="wpm">0</span>
+                <small>WPM</small>
+            </div>
+
+            <div class="stat-card">
+                <span id="accuracy">100%</span>
+                <small>ACCURACY</small>
+            </div>
+
+            <div class="stat-card">
+                <span id="errors">0</span>
+                <small>ERRORS</small>
+            </div>
+
+        </section>
+
+
+        <!-- Buttons -->
+        <section class="buttons">
+
+            <button id="startBtn">
+                ▶ START GAME
+            </button>
+
+            <button id="restartBtn">
+                ↻ TRY AGAIN
+            </button>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            ⚡ Keep typing. Beat your best!
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
