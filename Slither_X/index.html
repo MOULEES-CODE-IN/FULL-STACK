@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- IMPORTANT: Mobile responsive -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Snake Arena</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <!-- HEADER -->
+        <header class="top-bar">
+            <div class="game-title">
+                <span>🐍</span>
+                <div>
+                    <h1>SNAKE ARENA</h1>
+                    <p>Survive • Grow • Dominate</p>
+                </div>
+            </div>
+
+            <div class="score-box">
+                <span>SCORE</span>
+                <strong id="score">0</strong>
+            </div>
+        </header>
+
+
+        <!-- GAME AREA -->
+        <main class="game-area">
+
+            <canvas id="gameCanvas"></canvas>
+
+            <!-- START SCREEN -->
+            <div class="start-screen" id="startScreen">
+
+                <div class="snake-icon">🐍</div>
+
+                <h2>Snake Arena</h2>
+
+                <p>Ready to survive?</p>
+
+                <button id="startBtn">
+                    ▶ PLAY NOW
+                </button>
+
+                <div class="best-score">
+                    BEST SCORE:
+                    <span id="bestScore">0</span>
+                </div>
+
+            </div>
+
+
+            <!-- GAME OVER -->
+            <div class="game-over" id="gameOver">
+
+                <div class="game-over-icon">💥</div>
+
+                <h2>GAME OVER</h2>
+
+                <p>SCORE</p>
+
+                <strong id="finalScore">0</strong>
+
+                <button id="restartBtn">
+                    ↻ PLAY AGAIN
+                </button>
+
+            </div>
+
+        </main>
+
+
+        <!-- MOBILE CONTROLS -->
+        <div class="mobile-controls">
+
+            <button class="control empty"></button>
+
+            <button class="control" data-direction="up">↑</button>
+
+            <button class="control empty"></button>
+
+            <button class="control" data-direction="left">←</button>
+
+            <button class="control" data-direction="down">↓</button>
+
+            <button class="control" data-direction="right">→</button>
+
+        </div>
+
+
+        <!-- CONTROLS INFO -->
+        <div class="controls-info">
+            <span>⌨ Arrow Keys</span>
+            <span>•</span>
+            <span>SPACE Pause</span>
+            <span>•</span>
+            <span>R Restart</span>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
